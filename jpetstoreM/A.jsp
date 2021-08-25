@@ -10,6 +10,7 @@
 <%
 System.out.println("TA Session"+request.getSession().getId());
 out.println("TA Session"+request.getSession().getId());
+out.println("TA Session"+request.getSession().getId());
 %>
 </body>
 </html>

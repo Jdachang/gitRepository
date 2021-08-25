@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<loong-web-app>
+<class-loader delegate="false"/>
+<session-config>
+
+<!--
+<cookie-properties> 
+        <property name="cookiePath" value="/" /> 
+ </cookie-properties> 
+-->
+	
+<session-manager persistence-type="coherence-web">
+<manager-properties>
+<property name="useMemcached" value="true" />
+<property name="memcachedNodes" value="http://192.168.106.27:8091/pools" />
+<property name="username" value="default" />
+<property name="password" value="" />
+<property name="requestUriIgnorePattern" value=".*\.(png|gif|jpg|css|js)$" />
+<property name="memcachedProtocol" value="text"/>
+<property name="sticky" value="false" />
+<property name="sessionBackupAsync" value="true" />
+<property name="sessionBackupTimeout" value="30000" />
+ <property name="transcoderFactoryClass"
+value="de.javakaffee.web.msm.serializer.xstream.XStreamTranscoderFactory"/>
+<property name="copyCollectionsForSerialization" value="false" />
+</manager-properties>
+</session-manager>
+</session-config>
+</loong-web-app>
+
